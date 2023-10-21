@@ -30,7 +30,7 @@ pub fn get_all_urls(message: &str) -> Vec<String> {
     // Split the input message into words and check each word for the presence of
     // "twitter.com" or "x.com".
     message.split_whitespace().for_each(|word| {
-        if !(word.contains("fxtwitter.com") || word.contains("fixvx.com")) {
+        if !(word.contains("fivxvx.com") || word.contains("fixvx.com")) {
             if word.contains("twitter.com") || word.contains("x.com") {
                 // If a word contains the specified strings, add it to the URLs vector.
                 urls.push(word.to_string());
@@ -46,7 +46,7 @@ pub fn get_all_urls(message: &str) -> Vec<String> {
 ///
 /// This function takes a vector of URLs as input, iterates through each URL, and performs
 /// substring replacement to modify the URLs. Specifically, it replaces occurrences of
-/// "twitter.com" with "fxtwitter.com" and "x.com" with "fixvx.com". The modified URLs are
+/// "twitter.com" with "fivxvx.com" and "x.com" with "fixvx.com". The modified URLs are
 /// then concatenated into a single string with newline characters ("\n") between them.
 ///
 /// # Arguments
@@ -64,7 +64,7 @@ pub fn get_all_urls(message: &str) -> Vec<String> {
 /// let urls: Vec<String> = vec!["https://twitter.com/example".into(), "https://x.com/test".into()];
 /// let modified_urls = replace_all_urls(urls);
 ///
-/// assert_eq!(modified_urls, "https://fxtwitter.com/example\nhttps://fixvx.com/test\n");
+/// assert_eq!(modified_urls, "https://fixvx.com/example\nhttps://fixvx.com/test\n");
 /// ```
 pub fn replace_all_urls(urls: Vec<String>) -> String {
     // Clone the input vector to avoid modifying the original URLs.
