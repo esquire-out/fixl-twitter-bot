@@ -34,7 +34,7 @@ export DISCORD_TOKEN=YOURTOKENHERE
 after that run the executable located at the `fixl-twitter-bot/target/release/` with the name of `fix-twitterlinks-bot`.
 
 ## Arguments
-use this command to run the bot without the URL validation method, meaning that it will not make sure that the url is a valid URL.
+run the bot with the argument `--skip-validation` to disabled URL validation, speeds up the process but it means the bot will resend invalid links that embed to nothing. Example:
 ```bash
 ./fix-twitterlinks-bot --skip-validation
 ```
