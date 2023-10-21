@@ -26,4 +26,9 @@ Should be `fixl-twitter-bot/`, compile the source code into a binary (might take
 ```bash
 cargo build --release
 ```
-
+## Getting the bot Running
+Once the binary is built export the discord token of the bot you which to connect to the shell env using `export` and replacing `YOURTOKENHERE` with the bot token.
+```bash
+export DISCORD_TOKEN=YOURTOKENHERE
+```
+after that run the executable located at the `fixl-twitter-bot/target/release/` with the name of `fix-twitterlinks-bot`.
