@@ -32,3 +32,9 @@ Once the binary is built export the discord token of the bot you which to connec
 export DISCORD_TOKEN=YOURTOKENHERE
 ```
 after that run the executable located at the `fixl-twitter-bot/target/release/` with the name of `fix-twitterlinks-bot`.
+
+## Arguments
+use this command to run the bot without the URL validation method, meaning that it will not make sure that the url is a valid URL.
+```bash
+./fix-twitterlinks-bot --skip-validation
+```
