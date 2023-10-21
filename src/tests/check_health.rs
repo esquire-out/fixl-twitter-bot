@@ -34,7 +34,7 @@ async fn separate_multiple_urls_from_text() {
 async fn replace_twitter_urls() {
     let urls = vec!["https://twitter.com/example".to_string()];
     let modified_urls = replace_all_urls(urls);
-    assert_eq!(modified_urls, "https://fxtwitter.com/example\n");
+    assert_eq!(modified_urls, "https://fixvx.com/example\n");
 }
 
 /// Asynchronous test for replacing occurrences of 'x.com' in URLs.
@@ -62,7 +62,7 @@ async fn ignore_invalid_urls() {
 
 #[tokio::test]
 async fn ignores_fx_urls() {
-    let urls = "https://fxtwitter.com/example";
+    let urls = "https://fixvx.com/example";
     let invalid_urls = get_all_urls(urls);
     let replaced_urls = replace_all_urls(invalid_urls);
     assert_eq!(replaced_urls, "");
