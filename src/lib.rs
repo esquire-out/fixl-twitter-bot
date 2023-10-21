@@ -30,9 +30,11 @@ pub fn get_all_urls(message: &str) -> Vec<String> {
     // Split the input message into words and check each word for the presence of
     // "twitter.com" or "x.com".
     message.split_whitespace().for_each(|word| {
-        if word.contains("twitter.com") || word.contains("x.com") {
-            // If a word contains the specified strings, add it to the URLs vector.
-            urls.push(word.to_string());
+        if !(word.contains("fxtwitter.com") || word.contains("fixvx.com")) {
+            if word.contains("twitter.com") || word.contains("x.com") {
+                // If a word contains the specified strings, add it to the URLs vector.
+                urls.push(word.to_string());
+            }
         }
     });
 
@@ -71,7 +73,7 @@ pub fn replace_all_urls(urls: Vec<String>) -> String {
         acc + {
             // Perform URL modification using pattern matching and the replace method.
             match url.to_string() {
-                w if url.contains("twitter.com") => w.replace("twitter.com", "fxtwitter.com") + "\n",
+                w if url.contains("twitter.com") => w.replace("twitter.com", "fixvx.com") + "\n",
                 w if url.contains("x.com") => w.replace("x.com", "fixvx.com") + "\n",
                 _ => "".to_string(),
             }

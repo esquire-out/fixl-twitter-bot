@@ -60,3 +60,19 @@ async fn ignore_invalid_urls() {
     assert_eq!(modified_urls, "");
 }
 
+#[tokio::test]
+async fn ignores_fx_urls() {
+    let urls = "https://fxtwitter.com/example";
+    let invalid_urls = get_all_urls(urls);
+    let replaced_urls = replace_all_urls(invalid_urls);
+    assert_eq!(replaced_urls, "");
+}
+
+#[tokio::test]
+async fn ignores_fixvx_urls() {
+    let urls = "https://fixvx.com/example";
+    let invalid_urls = get_all_urls(urls);
+    let replaced_urls = replace_all_urls(invalid_urls);
+    assert_eq!(replaced_urls, "");
+}
+
