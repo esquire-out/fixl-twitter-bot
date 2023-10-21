@@ -1,4 +1,4 @@
-# fixl-twitter [![Rust Build and Test](https://github.com/esquire-out/fixl-twitter/actions/workflows/build-test.yml/badge.svg?branch=main)](https://github.com/esquire-out/fixl-twitter/actions/workflows/build-test.yml)
+# fixl-twitter [![Rust Build and Test](https://github.com/esquire-out/fixl-twitter-bot/actions/workflows/rust.yml/badge.svg)](https://github.com/esquire-out/fixl-twitter-bot/actions/workflows/rust.yml)
 A simple discord bot written in rust to modify urls in order to embed both twitter.com and x.com links properly.
 
 # Setting up
